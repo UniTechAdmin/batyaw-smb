@@ -15,10 +15,11 @@
     "dev": "ts-node --esm ./src/app.ts"
   },
   "dependencies": {
+    "@langchain/core": "^0.2.0",
+    "@langchain/openai": "^0.0.32",
     "@types/node": "^18.15.10",
-    "dotenv": "^16.0.3",
     "js-yaml": "^4.1.0",
-    "langchain": "^0.0.96",
+    "langchain": "^0.2.0",
     "typescript": "^5.0.2"
   },
   "devDependencies": {
