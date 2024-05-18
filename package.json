@@ -3,16 +3,16 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build": "dotenv -e .env.local turbo run build",
     "clean": "turbo run clean",
-    "dev": "turbo run dev",
+    "dev": "dotenv -e .env.local turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
-  "dependencies": {},
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "dotenv": "^16.0.3",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
